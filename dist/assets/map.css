@@ -2,7 +2,7 @@
 .map {
   background:
     linear-gradient(rgba(8, 29, 24, .08), rgba(8, 29, 24, .18)),
-    url('blue-mesa-satellite.jpg') 72% 61% / auto 205% no-repeat;
+    url('blue-mesa-route.jpg') center / cover no-repeat;
 }
 
 .route,
@@ -13,11 +13,7 @@
 }
 
 .map::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('route-overlay.svg?v=3') center / 100% 100% no-repeat;
-  pointer-events: none;
+  content: none;
 }
 
 .boat-route {
@@ -71,7 +67,7 @@
 }
 
 @media (max-width: 560px) {
-  .map { background-position: 72% 61%; background-size: auto 205%; }
+  .map { background-position: center; background-size: cover; }
   .coordinates { right: 4%; }
   .coordinates::before { font-size: .68rem; }
 }
