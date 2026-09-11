@@ -4,12 +4,12 @@
       <feDropShadow dx="0" dy="0.5" stdDeviation="0.6" flood-opacity="0.6"/>
     </filter>
   </defs>
-  <path d="M85 49 C76 44 69 42 63 43 C53 44 46 48 38 52 C29 57 22 58 15 57" fill="none" stroke="#e79a49" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="1.6 1.2" filter="url(#shadow)"/>
+  <path d="M85 49 C77 45 71 43 64 43 C58 43 53 44 48 46" fill="none" stroke="#e79a49" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="1.6 1.2" filter="url(#shadow)"/>
   <g filter="url(#shadow)">
     <circle cx="85" cy="49" r="2.4" fill="#fff" stroke="#173d32" stroke-width="0.75"/>
     <path d="M82.2 53 L85 49 L88.2 53 M83.4 51.6 L81.6 49.8" fill="none" stroke="#fff" stroke-width="0.9" stroke-linecap="round"/>
-    <circle cx="63" cy="43" r="2.25" fill="#fff"/><circle cx="63" cy="43" r="1.05" fill="#e79a49"/>
-    <circle cx="30" cy="56" r="2.25" fill="#fff"/><circle cx="30" cy="56" r="1.05" fill="#e79a49"/>
+    <circle cx="72" cy="44" r="2.25" fill="#fff"/><circle cx="72" cy="44" r="1.05" fill="#e79a49"/>
+    <circle cx="56" cy="44" r="2.25" fill="#fff"/><circle cx="56" cy="44" r="1.05" fill="#e79a49"/>
   </g>
   <g fill="#fff" font-family="Arial, sans-serif" font-size="2.25" font-weight="700" letter-spacing="0.15" stroke="#0b2922" stroke-width="0.85" paint-order="stroke">
     <text x="77" y="57">BOAT LAUNCH</text>

@@ -16,7 +16,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url('route-overlay.svg?v=2') center / 100% 100% no-repeat;
+  background: url('route-overlay.svg?v=3') center / 100% 100% no-repeat;
   pointer-events: none;
 }
 

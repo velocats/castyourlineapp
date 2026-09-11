@@ -15,6 +15,11 @@ const routeOverlay=`<svg class="map-route-svg" viewBox="0 0 100 100" preserveAsp
 </svg>`;
 document.querySelectorAll('.map').forEach(map=>map.insertAdjacentHTML('beforeend',routeOverlay));
 
+document.querySelectorAll('a').forEach(link=>{
+  const label=link.textContent.trim();
+  if(label==='View on the App Store ↗'||label==='App Store') link.textContent='Coming soon';
+});
+
 const menu=document.querySelector('.menu');
 const links=document.querySelector('.nav-links');
 menu?.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
