@@ -1,0 +1,73 @@
+/* Real Colorado geography for the route preview. */
+.map {
+  background:
+    linear-gradient(rgba(8, 29, 24, .08), rgba(8, 29, 24, .18)),
+    url('blue-mesa-satellite.jpg') 49% 58% / auto 125% no-repeat;
+}
+
+.route,
+.pin { display: none; }
+
+.map-route-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.boat-route {
+  fill: none;
+  stroke: var(--amber);
+  stroke-width: .72;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1.5 1.15;
+  filter: drop-shadow(0 .35px .5px rgba(0, 0, 0, .7));
+}
+
+.route-start { fill: #fff; stroke: var(--pine); stroke-width: .7; }
+.launch-dock { stroke: #fff; stroke-width: .85; stroke-linecap: round; }
+.catch-halo { fill: rgba(255, 255, 255, .95); filter: drop-shadow(0 .6px 1px rgba(0, 0, 0, .45)); }
+.catch-core { fill: var(--amber); }
+.map-label {
+  fill: #fff;
+  font: 600 2.2px "DM Sans", sans-serif;
+  letter-spacing: .1em;
+  paint-order: stroke;
+  stroke: rgba(8, 29, 24, .9);
+  stroke-width: .8px;
+  stroke-linejoin: round;
+}
+
+.coordinates {
+  left: 4%;
+  bottom: 4%;
+  font-size: 0;
+  color: #fff;
+  background: rgba(8, 29, 24, .78);
+  padding: 11px 14px;
+  border-radius: 3px;
+  backdrop-filter: blur(5px);
+}
+
+.coordinates::before {
+  content: "BLUE MESA RESERVOIR · COLORADO  —  ROUTE 3.4 MI";
+  font-size: .75rem;
+  letter-spacing: .12em;
+}
+
+.coordinates::after {
+  content: "Satellite imagery: NASA Earth Observatory";
+  display: block;
+  font-size: .66rem;
+  letter-spacing: .02em;
+  margin-top: 3px;
+  color: rgba(255, 255, 255, .72);
+}
+
+@media (max-width: 560px) {
+  .map { background-position: 49% 58%; background-size: auto 125%; }
+  .coordinates { right: 4%; }
+  .coordinates::before { font-size: .68rem; }
+}
