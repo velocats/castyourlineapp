@@ -2,7 +2,7 @@
 .map {
   background:
     linear-gradient(rgba(8, 29, 24, .08), rgba(8, 29, 24, .18)),
-    url('blue-mesa-satellite.jpg') 49% 58% / auto 125% no-repeat;
+    url('blue-mesa-satellite.jpg') 49% 64% / auto 220% no-repeat;
 }
 
 .route,
@@ -67,7 +67,7 @@
 }
 
 @media (max-width: 560px) {
-  .map { background-position: 49% 58%; background-size: auto 125%; }
+  .map { background-position: 49% 64%; background-size: auto 220%; }
   .coordinates { right: 4%; }
   .coordinates::before { font-size: .68rem; }
 }
