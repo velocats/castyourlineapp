@@ -52,7 +52,7 @@
 }
 
 .coordinates::before {
-  content: "BLUE MESA RESERVOIR · COLORADO  —  ROUTE 3.4 MI";
+  content: "BLUE MESA RESERVOIR · COLORADO · ROUTE 3.4 MI";
   font-size: .75rem;
   letter-spacing: .12em;
 }
