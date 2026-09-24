@@ -19,7 +19,7 @@
 .book:before{content:"";position:absolute;inset:14px -14px -14px 14px;background:#e6e3d8;box-shadow:0 24px 60px rgba(0,0,0,.14);z-index:-1}
 .book-title{font:500 2.1rem/1.05 "Libre Franklin",sans-serif;letter-spacing:-.04em}
 .book-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:22px 0 18px}
-.book-photo{aspect-ratio:1;background:#c9d6ce}
+.book-photo{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:#c9d6ce}
 .book-photo:nth-child(2){background:#b6c8bf}
 .book-photo:nth-child(3){background:#d8cdb6}
 .book-photo:nth-child(4){background:#bfcec6}
