@@ -32,3 +32,14 @@
 .plain-list li:first-child{border-top:1px solid var(--line);color:var(--ink);font-weight:600}
 .story .plain-list{margin-bottom:0}
 @media(max-width:850px){.book-visual{padding:60px 24px}.recap-card{transform:none}.recap-stats{gap:20px}}
+.support-form{display:grid;gap:8px;margin-top:28px;max-width:640px}
+.support-form label{font-weight:600;font-size:.95rem;margin-top:12px}
+.support-form input,.support-form select,.support-form textarea{font:inherit;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%;box-sizing:border-box}
+.support-form input:focus,.support-form select:focus,.support-form textarea:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:var(--amber)}
+.support-form textarea{resize:vertical;min-height:150px}
+.support-form .button{justify-self:start;margin-top:18px;cursor:pointer;font:inherit;font-weight:600}
+.form-helper{font-size:.88rem;color:#6a7871;margin:0}
+.form-success{background:var(--pine);color:#fff;padding:14px 18px;border-radius:10px;margin:0 0 8px}
+.story a:not(.button):not(.text-link){color:var(--pine)}
+.policy-updated{font-size:.95rem;color:#6a7871}
+.policy h3{font-size:1.25rem;font-weight:600;margin:28px 0 10px;letter-spacing:-.02em}
