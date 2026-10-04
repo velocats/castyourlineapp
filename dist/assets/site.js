@@ -25,3 +25,16 @@ const links=document.querySelector('.nav-links');
 menu?.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
 document.querySelectorAll('.fade').forEach(e=>io.observe(e));
+
+/* Tap a screenshot to see it full size. Without JS the link opens the image itself. */
+const shotLinks=document.querySelectorAll('a.shot-zoom');
+if(shotLinks.length&&window.HTMLDialogElement){
+  const box=document.createElement('dialog');
+  box.className='lightbox';
+  box.setAttribute('aria-label','Screenshot');
+  box.innerHTML='<button type="button" class="lightbox-close">Close</button><img alt="">';
+  document.body.append(box);
+  const big=box.querySelector('img');
+  shotLinks.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const img=a.querySelector('img');big.src=a.href;big.alt=img?img.alt:'';box.showModal()}));
+  box.addEventListener('click',()=>box.close());
+}
