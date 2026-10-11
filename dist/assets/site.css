@@ -74,4 +74,12 @@
 }
 
 /* Apple’s original badge artwork, with clear space and a visible keyboard focus. */
-.app-store-badge{display:inline-flex;flex:none;align-items:center;padding:10px;text-decoration:none;border-radius:5px}.app-store-badge img{width:120px;height:40px;max-width:none}.app-store-badge:focus-visible{outline:3px solid var(--amber);outline-offset:2px}.actions .app-store-badge{margin:-10px 0 -10px -10px}.nav-links{gap:20px}
+.app-store-badge{display:inline-flex;flex:none;align-items:center;padding:10px;text-decoration:none;border-radius:5px}.app-store-badge img{width:auto;height:40px;max-width:none}.app-store-badge:focus-visible{outline:3px solid var(--amber);outline-offset:2px}.actions .app-store-badge{margin:-10px 0 -10px -10px}.nav-links{gap:20px}
+
+/* Platform note under screenshot groups while only the Mac app is available. */
+.shot-note{font-size:.88rem;color:#5b6963;margin:24px 0 0;max-width:none}
+.wrap>.shot-note{text-align:center}
+.feature-band .shot-note{color:rgba(255,255,255,.66)}
+.band-copy .shot-note,.story .shot-note{font-size:.88rem;margin:24px 0 0}
+/* The Mac App Store badge is wider than the old one: keep the nav on one line just above the mobile breakpoint. */
+@media(min-width:851px) and (max-width:900px){.nav-links{gap:14px}}
